@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- implementation de la barre de navigation -->
+   <header>
+    <h1>Fallou</h1>
+
+    <ul>
+          <ul type="square">
+            <li>accueil</li>
+            <li>a propos</li>
+            <li>experience professionnelle</li>
+            <li>CV</li>
+            <li>contact</li>
+          </ul>
+    </ul>
+   </header>
+   <!-- implementation de la section accueil -->
+<section>
+    <!-- pour inserer une image on utilise la balise img ensuite on telecharge une image et on renomme 
+    on va sur vscode creer un dossier assets et apres glisser le fichier telecharge en bas de assets. on appuie simultanement sur
+    ctrl et espace pour inserer l'image dans le code -->
+    <h2>Bienvenue sur mon espace</h2>
+    <img src="assets/profil.jpg" alt="">
+
+    <h1>Bonjour, je suis developpeur web passionne par HTML, CSS, javaScript</h1>
+
+    </section>
+
+    <section>
+
+        <h2>A propos de fallou</h2>
+
+        <p>Je developpe des applications web modernes et j'aime les nouvelles technologies.</p>
+
+        <h3>Mes competences</h3>
+
+        <ul>
+            <li>git-github</li>
+            <li>html</li>
+            <li>css</li>
+            <li>javaScript</li>
+        </ul>
+
+    </section>
+<!-- pour mettre un tableau on utilise la balise table en on utilise th pour determiner les colonnes ensuite tr pour les lignes. 
+ pour encadrer le tableau on vient a l'interieur de la balise table ecrire border et mettre 1 -->
+    <table border="1">
+        <th>annee</th>
+        <th>entreprise</th>
+        <th>fonction occupe</th>
+
+        <tr>
+            <td>2024</td>
+            <td>entreprise A</td>
+            <td>developpeur frontend</td>
+        </tr>
+
+        <tr>
+            <td>2025</td>
+            <td>entreprise B</td>
+            <td>developpeur backend</td>
+        </tr>
+
+        <tr>
+            <td>2026</td>
+            <td>entreprise C</td>
+            <td>developpeur fillstack</td>
+        </tr>
+
+        <tr>
+            <td>2027</td>
+            <td>entreprise D</td>
+            <td>ingenieur cybersecurite</td>
+        </tr>
+    </table>
+    <p>telecharger mon CV</p>
+    <a href="DOC-20250821-WA0020..pdf">cliquer pour telecharger</a>
+    <section>
+        <h2>
+            <p>Contacter moi</p>
+            <label for="">Prenom et Nom:</label><br>
+            <input type="text" ><br>
+            <label for="">email</label><br>
+            <input type="email" id="email"><br>
+            <label for="">Ecrire un message</label><br>
+            <textarea name="" id=""></textarea><br>
+            <button type="submit">Envoyer</button>
+        </h2>
+    </section>
+</body>
+</html>
