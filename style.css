@@ -1,21 +1,121 @@
 
-ul{
 
-   display: inline;
+
+Mamadou Thiam
+16:46
+/* ===== RESET DE BASE ===== */
+
+/* Supprime les marges et paddings par défaut du navigateur pour uniformiser l'affichage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur/hauteur totale d'un élément */
 }
 
-img{
-    width: 250px;
-    height: 250px;
-}
-body{
-    font-family: "Roboto", sans-serif; 
-    background-image: url("assets/web 3.jpg");
+/* ===== STYLE DU CORPS ===== */
 
+body {
+    font-family: Arial, sans-serif; /* Définit la police de caractères principale et une police de secours */
+    background-color: #f4f4f4; /* Couleur de fond légère pour adoucir le rendu */
+    color: #333; /* Couleur du texte principale, plus douce que le noir pur */
+    line-height: 1.6; /* Espacement entre les lignes pour améliorer la lisibilité */
+    padding: 20px; /* Espacement intérieur autour du contenu */
 }
-.c1{
-    color: blue;
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #2c3e50; /* Couleur de fond sombre pour le header */
+    color: white; /* Texte en blanc pour contraster avec le fond sombre */
+    padding: 20px; /* Espacement intérieur pour aérer le contenu du header */
+    text-align: center; /* Centre le texte horizontalement */
+    border-radius: 8px; /* Arrondit les coins du header */
+    margin-bottom: 30px; /* Espacement extérieur en bas pour séparer du reste */
 }
-.c2{
-    color: orangered;
+
+/* Supprime les puces de la liste de navigation */
+header ul {
+    list-style: none; /* Supprime les puces par défaut des éléments <li> */
 }
+
+/* Affiche les éléments de navigation en ligne côte à côte */
+header ul li {
+    display: inline; /* Passe les <li> en affichage inline pour les aligner horizontalement */
+    margin: 0 15px; /* Espacement horizontal entre chaque élément de navigation */
+}
+
+header ul li a {
+    color: white; /* Couleur du lien en blanc */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+/* ===== SECTIONS ===== */
+
+
+section {
+    background-color: white; /* Fond blanc pour chaque section */
+    padding: 20px; /* Espacement intérieur des sections */
+    margin-bottom: 20px; /* Espacement extérieur en bas entre les sections */
+    border-radius: 8px; /* Coins arrondis pour un aspect plus moderne */
+}
+
+h2 {
+    color: #2c3e50; /* Couleur des titres h2 assortie au header */
+    margin-bottom: 15px; /* Espacement sous le titre */
+    border-bottom: 2px solid #3498db; /* Ligne décorative sous le titre pour le mettre en valeur */
+    padding-bottom: 10px; /* Espacement entre le texte et la bordure */
+}
+
+h3 {
+    color: #3498db; /* Couleur bleue pour les sous-titres */
+    margin-bottom: 10px;
+}
+
+/* ===== IMAGE DE PROFIL ===== */
+
+img {
+    max-width: 150px; /* Limite la largeur maximale de l'image pour éviter qu'elle ne soit trop grande */
+    border-radius: 50%; /* Rend l'image ronde (cercle) */
+    display: block; /* Passe l'élément en bloc pour pouvoir appliquer les marges automatiques */
+    margin: 10px auto; /* Centre horizontalement l'image (auto à gauche et à droite) */
+}
+
+/* ===== TABLEAU ===== */
+
+table {
+    width: 100%; /* Le tableau occupe toute la largeur de son conteneur */
+    border-collapse: collapse; /* Fusionne les bordures doubles en une seule */
+    margin: 20px 0; /* Espacement vertical autour du tableau */
+}
+
+th, td {
+    padding: 10px; /* Espacement intérieur dans les cellules */
+    text-align: left; /* Aligne le texte à gauche dans les cellules */
+    border: 1px solid #ddd; /* Bordure fine et discrète autour des cellules */
+}
+
+th {
+    background-color: #3498db; /* Fond bleu pour les en-têtes de colonnes */
+    color: white; /* Texte blanc pour les en-têtes */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fond alterné (pair) pour améliorer la lisibilité des lignes */
+}
+
+/* ===== LIEN CV ===== */
+
+a {
+    color: #3498db; /* Couleur bleue pour les liens */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+a:hover {
+    text-decoration: underline; /* Souligne le lien au survol pour indiquer qu'il est cliquable */
+}
+
+/* ===== FORMULAIRE ===== */
+
+label {
+    font-weight: bold; /* Met le texte des labels en gras */
+    display: block; /* Affiche le label en bloc po
